@@ -1,0 +1,21 @@
+# Build outputs
+bin/
+obj/
+
+# VS / Rider / VSCode
+.vs/
+.vscode/
+*.user
+*.suo
+
+# SQLite local DB
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
