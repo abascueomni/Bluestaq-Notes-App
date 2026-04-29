@@ -22,4 +22,5 @@ app.MapControllers();
 
 app.Run();
 
-public partial class Program();
+// Required for WebApplicationFactory integration testing
+public partial class Program { }
