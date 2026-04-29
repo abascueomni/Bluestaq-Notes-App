@@ -19,9 +19,15 @@ SQLite was chosen to keep the project self-contained without external dependenci
 ## Prerequisites
 - .NET SDK 10
 
-## Run the API
+## Running the API
+From the repository root:
 ```Bash
-dotnet run --project BluestaqNotesApp
+cd BluestaqNotesApp
+dotnet run
+```
+Or:
+```Bash
+dotnet run --project BluestaqNotesApp/BluestaqNotesApp.csproj
 ```
 The API will be available at:
 ```Bash
@@ -29,10 +35,15 @@ http://localhost:5xxx/api/notes
 ```
 
 ## How to Run tests
+From the repository root:
 ```Bash
+dotnet test BluestaqNotesApp/BluestaqNotesApp.sln
+```
+Or:
+```Bash
+cd BluestaqNotesApp
 dotnet test
 ```
-
 This runs:
 - API integration tests using WebApplicationFactory
 - Data-layer tests using EF Core InMemory database
